@@ -199,7 +199,7 @@ If any existing active booking satisfies this condition, the transaction is reje
 | Required Deliverable | Technical Component | Architectural Proof |
 | :--- | :--- | :--- |
 | **Fully functional web application** | React 18 SPA + Vite (`client/dist`) + Tailwind CSS | Component architecture in `client/src/components/`, stateful React Contexts (`AuthContext`, `SocketContext`), full responsive layout. |
-| **Live deployed system with real-time tracking** | Express.js + Socket.IO (`http://localhost:5000`) | Sub-second WebSocket broadcasts, HTML5 Native Desktop Push Notifications, and synthesized Web Audio chime alerts. |
+| **Live deployed system with real-time tracking** | Production Live: [Vercel SPA](https://prop-flow-pi.vercel.app) + [Render Backend](https://propflow-w670.onrender.com) | Sub-second WebSocket broadcasts, HTML5 Native Desktop Push Notifications, and synthesized Web Audio chime alerts. |
 | **Maintenance & amenity dashboards** | `MaintenanceDashboard.jsx`, `AmenityDashboard.jsx`, `AdminReportsDashboard.jsx` | Dynamic 3-stage status stepper, interval collision prevention algorithm (`HTTP 409`), 1-click arrival check-in / departure check-out, and 1-click CSV export engine. |
 | **PRD & technical documentation** | `docs/PRD.md`, `docs/ARCHITECTURE.md`, `README.md` | Formal requirements document, architecture specification, entity relationship diagram (ERD), sequence flows, and quickstart documentation. |
 

@@ -58,6 +58,14 @@ npm start
 
 ---
 
+## 🌐 Live Production Deployment
+
+- **Frontend (Vercel CDN):** [https://prop-flow-pi.vercel.app](https://prop-flow-pi.vercel.app)
+- **Backend API & WebSockets (Render):** [https://propflow-w670.onrender.com](https://propflow-w670.onrender.com)
+- **GitHub Repository:** [https://github.com/dharmendra0412/PropFlow](https://github.com/dharmendra0412/PropFlow)
+
+---
+
 ## 🚀 Cloud Deployment Guide (Vercel + Render)
 
 PropFlow utilizes a high-performance decoupled architecture for production:
@@ -99,7 +107,7 @@ PropFlow utilizes a high-performance decoupled architecture for production:
 | Deliverable | Description | Verification / How to Check |
 | :--- | :--- | :--- |
 | **1. Fully Functional Web Application** | Clean, Zillow-grade SPA with React 18 & Tailwind CSS. Zero dummy/mock data. Authenticates real users via bcrypt + JWT. | Open `http://localhost:5000` in browser. Test registration & login. |
-| **2. Live Deployed System with Real-Time Tracking** | Node.js + Express.js backend with Socket.IO bidirectional WebSockets, HTML5 Native Browser Push Alerts, and Web Audio chimes. | Submit work orders or book facilities; watch status update across tabs in real time without refreshing. |
+| **2. Live Deployed System with Real-Time Tracking** | Node.js + Express.js backend with Socket.IO bidirectional WebSockets, HTML5 Native Browser Push Alerts, and Web Audio chimes. | Live at [https://prop-flow-pi.vercel.app](https://prop-flow-pi.vercel.app). Submit work orders or book facilities; watch status update across tabs in real time without refreshing. |
 | **3. Maintenance & Amenity Dashboards** | • **Maintenance Dashboard**: Multi-category filter, visual 3-step lifecycle (`Pending` ➔ `In Progress` ➔ `Completed`), and $\le 48\text{h}$ SLA telemetry.<br>• **Amenity Hub**: Conflict-free scheduling with mathematical interval collision prevention (`HTTP 409`), plus 1-click Check-In and Check-Out timestamps.<br>• **Admin Reports & Analytics Dashboard**: 1-click CSV Exporters (`/api/analytics/export/maintenance.csv`, `/api/analytics/export/amenities.csv`) and Technician Turnaround Scorecard. | Switch to Property Owner view (`dharmendrakumar481212@gmail.com`) to inspect live KPI cards, technician scorecards, and download CSV reports. |
 | **4. PRD & Technical Documentation** | Full specifications, system architecture, ER diagrams, sequence flows, API contracts, and user flows. | Read [`docs/PRD.md`](docs/PRD.md) and [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). |
 
