@@ -58,6 +58,42 @@ npm start
 
 ---
 
+## 🚀 Cloud Deployment Guide (Vercel + Render)
+
+PropFlow utilizes a high-performance decoupled architecture for production:
+- **Backend (Render.com)**: Persistent Node.js + Express + Socket.IO server with live WebSocket streaming.
+- **Frontend (Vercel)**: Ultra-fast globally distributed Vite + React Single Page Application.
+
+### Step 1: Deploy Backend on Render (2 minutes)
+1. Go to [dashboard.render.com](https://dashboard.render.com) and sign in with GitHub.
+2. Click **New +** -> **Web Service**.
+3. Select your repository: `https://github.com/dharmendra0412/PropFlow`.
+4. Configure settings:
+   - **Name**: `propflow-backend` (or your choice)
+   - **Root Directory**: `server`
+   - **Environment**: `Node`
+   - **Build Command**: `npm install`
+   - **Start Command**: `npm start`
+   - **Instance Type**: `Free`
+5. Under **Environment Variables**, add:
+   - `JWT_SECRET`: `super_secure_jwt_propflow_secret_key_2026`
+   - `NODE_ENV`: `production`
+6. Click **Deploy Web Service**.
+7. Once live, copy your backend URL (e.g. `https://propflow-backend.onrender.com`).
+
+---
+
+### Step 2: Deploy Frontend on Vercel (1 minute)
+1. Go to [vercel.com/new](https://vercel.com/new) and select `dharmendra0412/PropFlow`.
+2. Next to `client (Vite)`, click **Import single project →** (or set Root Directory to `client`).
+3. Under **Environment Variables**, add:
+   - **Name**: `VITE_API_URL`
+   - **Value**: `https://propflow-backend.onrender.com` (Your Render backend URL from Step 1)
+4. Click **Deploy**.
+5. Your live production application is now fully running with real-time WebSockets!
+
+---
+
 ## 📦 Deliverables & Submission Verification
 
 | Deliverable | Description | Verification / How to Check |

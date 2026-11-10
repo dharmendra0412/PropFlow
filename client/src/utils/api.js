@@ -1,4 +1,5 @@
-const API_BASE = '/api';
+const RAW_URL = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
+const API_BASE = RAW_URL ? `${RAW_URL}/api` : '/api';
 
 export const fetchApi = async (endpoint, options = {}) => {
   const token = localStorage.getItem('token');
@@ -67,6 +68,6 @@ export const api = {
   getKPIs: () => fetchApi('/analytics/kpis'),
   getActivityLogs: () => fetchApi('/analytics/activity'),
   getTechnicians: () => fetchApi('/analytics/technicians'),
-  getMaintenanceCsvUrl: () => '/api/analytics/export/maintenance.csv',
-  getAmenitiesCsvUrl: () => '/api/analytics/export/amenities.csv',
+  getMaintenanceCsvUrl: () => `${API_BASE}/analytics/export/maintenance.csv`,
+  getAmenitiesCsvUrl: () => `${API_BASE}/analytics/export/amenities.csv`,
 };

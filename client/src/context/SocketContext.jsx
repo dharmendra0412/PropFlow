@@ -89,8 +89,9 @@ export const SocketProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    // In dev, target localhost:5000 if running on 5173
-    const socketUrl = window.location.port === '5173' ? 'http://localhost:5000' : '/';
+    // Dynamic backend detection (Vercel -> Render cross-domain or local proxy)
+    const backendEnv = (import.meta.env.VITE_SOCKET_URL || import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
+    const socketUrl = backendEnv || (window.location.port === '5173' ? 'http://localhost:5000' : '/');
     const s = io(socketUrl, {
       transports: ['websocket', 'polling'],
       reconnectionAttempts: 10,
