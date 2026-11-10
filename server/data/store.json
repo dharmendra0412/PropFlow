@@ -1,0 +1,227 @@
+{
+  "users": [
+    {
+      "id": "USR-MVWREZCS-747",
+      "name": "Dharmendra Kumar",
+      "email": "dharmendrakumar481212@gmail.com",
+      "password": "$2b$10$CpDmYsMnrBMnJCzH.IYGS.1qryp7sVo0/laWKt.42tGY/KBoMnEwa",
+      "role": "owner",
+      "phone": "9045141614",
+      "propertyId": "PROP-MVWRRR40-64",
+      "propertyName": "JBIT",
+      "unitNumber": "Management Office",
+      "createdAt": "2026-10-31T18:53:48.796Z"
+    },
+    {
+      "id": "USR-MVXG686K-489",
+      "name": "Dharmendra Kumar",
+      "email": "dharmendrakumar481221@gmail.com",
+      "password": "$2b$10$nhCeHGcOxBp.lMLq38De/eIt9MuPDGvp6UozdIob4pgwCfEFihGTu",
+      "role": "tenant",
+      "phone": "",
+      "propertyId": "",
+      "propertyName": "",
+      "unitNumber": "",
+      "createdAt": "2026-11-01T06:26:50.732Z"
+    }
+  ],
+  "properties": [
+    {
+      "id": "PROP-MVWRRR40-64",
+      "name": "JBIT",
+      "address": "SElaqui",
+      "totalUnits": 4,
+      "occupiedUnits": 0,
+      "managerId": "USR-MVWREZCS-747",
+      "managerName": "Dharmendra Kumar",
+      "description": "Geser\nro",
+      "createdAt": "2026-10-31T19:03:44.640Z"
+    },
+    {
+      "id": "PROP-MVXFXMDB-91",
+      "name": "JBIT College",
+      "address": "Rampur",
+      "totalUnits": 8,
+      "occupiedUnits": 0,
+      "managerId": "USR-MVWREZCS-747",
+      "managerName": "Dharmendra Kumar",
+      "description": "Geser\nro",
+      "createdAt": "2026-11-01T06:20:09.215Z"
+    }
+  ],
+  "amenities": [],
+  "maintenanceRequests": [
+    {
+      "id": "REQ-1001",
+      "propertyId": "PROP-MVWRRR40-64",
+      "propertyName": "JBIT",
+      "unitNumber": "Jbit",
+      "tenantId": "USR-MVWREZCS-747",
+      "tenantName": "Dharmendra Kumar",
+      "tenantPhone": "N/A",
+      "title": "Kitchen",
+      "category": "HVAC",
+      "priority": "High",
+      "status": "Completed",
+      "assignedTo": "Unassigned",
+      "description": "xyz",
+      "createdAt": "2026-11-01T06:22:34.815Z",
+      "updatedAt": "2026-11-10T04:10:19.935Z",
+      "resolvedAt": "2026-11-10T04:10:19.935Z",
+      "resolutionNotes": "",
+      "comments": [
+        {
+          "id": "CMT-mvxg0qpr",
+          "senderId": "USR-MVWREZCS-747",
+          "senderName": "Dharmendra Kumar",
+          "senderRole": "owner",
+          "message": "Maintenance ticket created.",
+          "timestamp": "2026-11-01T06:22:34.815Z"
+        },
+        {
+          "id": "CMT-mvxg15hc",
+          "senderId": "USR-MVWREZCS-747",
+          "senderName": "Dharmendra Kumar",
+          "senderRole": "owner",
+          "message": "Status updated from \"Pending\" to \"In Progress\".",
+          "timestamp": "2026-11-01T06:22:53.952Z"
+        },
+        {
+          "id": "CMT-mvxg17nq",
+          "senderId": "USR-MVWREZCS-747",
+          "senderName": "Dharmendra Kumar",
+          "senderRole": "owner",
+          "message": "Status updated from \"In Progress\" to \"Pending\".",
+          "timestamp": "2026-11-01T06:22:56.774Z"
+        },
+        {
+          "id": "CMT-mwa69aw7",
+          "senderId": "USR-MVWREZCS-747",
+          "senderName": "Dharmendra Kumar",
+          "senderRole": "owner",
+          "message": "Status updated from \"Pending\" to \"In Progress\".",
+          "timestamp": "2026-11-10T04:10:18.343Z"
+        },
+        {
+          "id": "CMT-mwa69c4f",
+          "senderId": "USR-MVWREZCS-747",
+          "senderName": "Dharmendra Kumar",
+          "senderRole": "owner",
+          "message": "Status updated from \"In Progress\" to \"Completed\".",
+          "timestamp": "2026-11-10T04:10:19.935Z"
+        }
+      ]
+    }
+  ],
+  "amenityBookings": [],
+  "activityLogs": [
+    {
+      "id": "ACT-MWAB7KP4-962",
+      "type": "STATUS_UPDATED",
+      "title": "Ticket #REQ-1002 is now Completed",
+      "description": "Dharmendra Kumar changed status of #REQ-1002 (Corridor 2B) to \"Completed\"",
+      "timestamp": "2026-11-10T06:28:55.816Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MWAB7KOH-315",
+      "type": "STATUS_UPDATED",
+      "title": "Ticket #REQ-1002 is now In Progress",
+      "description": "Dharmendra Kumar changed status of #REQ-1002 (Corridor 2B) to \"In Progress\"",
+      "timestamp": "2026-11-10T06:28:55.793Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MWAB7KNH-286",
+      "type": "MAINTENANCE_CREATED",
+      "title": "New Ticket Filed: #REQ-1002",
+      "description": "Dharmendra Kumar (Corridor 2B) requested [Medium] Auditing AC Unit in Corridor",
+      "timestamp": "2026-11-10T06:28:55.757Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MWA69C4G-652",
+      "type": "STATUS_UPDATED",
+      "title": "Ticket #REQ-1001 is now Completed",
+      "description": "Dharmendra Kumar changed status of #REQ-1001 (Jbit) to \"Completed\"",
+      "timestamp": "2026-11-10T04:10:19.936Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MWA69AWA-455",
+      "type": "STATUS_UPDATED",
+      "title": "Ticket #REQ-1001 is now In Progress",
+      "description": "Dharmendra Kumar changed status of #REQ-1001 (Jbit) to \"In Progress\"",
+      "timestamp": "2026-11-10T04:10:18.346Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MVXG686L-664",
+      "type": "USER_REGISTERED",
+      "title": "New Account Created",
+      "description": "Dharmendra Kumar registered as a tenant",
+      "timestamp": "2026-11-01T06:26:50.733Z",
+      "userId": "USR-MVXG686K-489",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MVXG17NS-887",
+      "type": "STATUS_UPDATED",
+      "title": "Ticket #REQ-1001 is now Pending",
+      "description": "Dharmendra Kumar changed status of #REQ-1001 (Jbit) to \"Pending\"",
+      "timestamp": "2026-11-01T06:22:56.776Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MVXG15HD-485",
+      "type": "STATUS_UPDATED",
+      "title": "Ticket #REQ-1001 is now In Progress",
+      "description": "Dharmendra Kumar changed status of #REQ-1001 (Jbit) to \"In Progress\"",
+      "timestamp": "2026-11-01T06:22:53.953Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MVXG0QPT-732",
+      "type": "MAINTENANCE_CREATED",
+      "title": "New Ticket Filed: #REQ-1001",
+      "description": "Dharmendra Kumar (Jbit) requested [High] Kitchen",
+      "timestamp": "2026-11-01T06:22:34.817Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MVXFXMDF-734",
+      "type": "PROPERTY_CREATED",
+      "title": "Property Registered: JBIT College",
+      "description": "Dharmendra Kumar registered new property at Rampur",
+      "timestamp": "2026-11-01T06:20:09.219Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MVWRRR42-434",
+      "type": "PROPERTY_CREATED",
+      "title": "Property Registered: JBIT",
+      "description": "Dharmendra Kumar registered new property at SElaqui",
+      "timestamp": "2026-10-31T19:03:44.642Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    },
+    {
+      "id": "ACT-MVWREZCU-297",
+      "type": "USER_REGISTERED",
+      "title": "New Account Created",
+      "description": "Dharmendra Kumar registered as a owner",
+      "timestamp": "2026-10-31T18:53:48.798Z",
+      "userId": "USR-MVWREZCS-747",
+      "userName": "Dharmendra Kumar"
+    }
+  ]
+}
