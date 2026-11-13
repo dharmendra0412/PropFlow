@@ -138,7 +138,8 @@ Project 1/
 ├── docs/                       # Project Documentation
 │   ├── PRD.md                  # Complete Product Requirements Document
 │   ├── ARCHITECTURE.md         # Technical Architecture & Mermaid Diagrams
-│   └── DPR.md                  # Comprehensive Detailed Project Report (DPR)
+│   ├── DPR.md                  # Comprehensive Detailed Project Report (DPR)
+│   └── VIDEO_SCRIPT.md         # 5-Minute Video Presentation & Screen Recording Script
 ├── package.json                # Root automation scripts
 └── README.md                   # System documentation
 ```
